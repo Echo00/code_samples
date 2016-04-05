@@ -1,0 +1,33 @@
+public class Game {
+	public static void main(String[] args){
+		int summe = 0;
+		String firstPlayer;
+		String secondPlayer;
+		// Namen des ersten Spieler erfragen
+		System.out.println("Bitte name des ersten Spieler eingeben:");
+			firstPlayer = Terminal.readString();
+			// Prüfe ob Name nicht leer ist, wenn ja Meldung ausgeben und erneuet erfragen
+			while(firstPlayer.equals("")){
+				System.out.println("Ungültige Name!");
+				System.out.println("Bitte Gültiger Name des ersten Spieler eingeben:");
+				firstPlayer = Terminal.readString();
+			}
+		// Namen des zeiten Spieler erfragen
+		System.out.println("Bitte name des zweiten Spieler eingeben:");
+			secondPlayer = Terminal.readString();
+			// Prüfe ob Name nicht leer ist, wenn ja Meldung ausgeben und erneuet erfragen
+			while(secondPlayer.equals("")){
+				System.out.println("Ungültige Name!");
+				System.out.println("Bitte Gütiger Name des zweiten Spieler eingeben:");
+				secondPlayer = Terminal.readString();
+			}
+		System.out.println("Name von Spieler 1: " + firstPlayer);
+		System.out.println("Name von Spieler 2: " + secondPlayer);
+		
+		// Beginnend mit dem ersten Spieler
+		System.out.println(firstPlayer + ", bitte gib eine Zahl zwischen 1 und 10 ein!");
+		int digit = Terminal.readInt();
+			while(summe <= 10){
+			} 
+	}
+}
